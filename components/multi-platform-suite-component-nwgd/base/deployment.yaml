@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: multi-platform-suite-component-nwgd
     spec:
       containers:
-      - image: go-image:latest
+      - image: quay.io/redhat-appstudio-qe/multi-platform-build-tenant/multi-platform-suite-application-twov/multi-platform-suite-component-nwgd@sha256:ede7a0adc731569e347c740418dc8e0cadcf8d7d9fcaed7e8f3e7c4d86149664
         name: my-go
         ports:
         - containerPort: 8081
