@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: multi-platform-suite-component-nwgd
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: multi-platform-suite-component-nwgd
+    app.kubernetes.io/part-of: multi-platform-suite-application-twov
+  name: multi-platform-suite-compglup
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: multi-platform-suite-component-nwgd
+    weight: null
+status: {}
